@@ -43,6 +43,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "950C1B8F214186A200594CA4"
+               BuildableName = "DCFilterView_ExampleUITests.xctest"
+               BlueprintName = "DCFilterView_ExampleUITests"
+               ReferencedContainer = "container:DCFilterView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

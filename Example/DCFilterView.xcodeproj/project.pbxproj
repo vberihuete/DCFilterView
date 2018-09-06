@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		906624A144FC64BEE51E482D /* Pods_DCFilterView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8166856BD35EBE30B287DCD /* Pods_DCFilterView_Example.framework */; };
+		950C1B93214186A200594CA4 /* DCFilterView_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950C1B92214186A200594CA4 /* DCFilterView_ExampleUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = DCFilterView;
+		};
+		950C1B95214186A200594CA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = DCFilterView_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,6 +52,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		76EF6EF6846F649587EF2B73 /* Pods-DCFilterView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DCFilterView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DCFilterView_Tests/Pods-DCFilterView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		950C1B90214186A200594CA4 /* DCFilterView_ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DCFilterView_ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		950C1B92214186A200594CA4 /* DCFilterView_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCFilterView_ExampleUITests.swift; sourceTree = "<group>"; };
+		950C1B94214186A200594CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B76FC1EAD2EAE4394C97AE /* DCFilterView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DCFilterView.podspec; path = ../DCFilterView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C52081F4D5D35464F705576A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F8166856BD35EBE30B287DCD /* Pods_DCFilterView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DCFilterView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		950C1B8D214186A200594CA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +102,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DCFilterView */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				950C1B91214186A200594CA4 /* DCFilterView_ExampleUITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B38B6C543DDBF2EE64B415FC /* Pods */,
 				10976C775680B6C23F438584 /* Frameworks */,
@@ -95,6 +114,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* DCFilterView_Example.app */,
 				607FACE51AFB9204008FA782 /* DCFilterView_Tests.xctest */,
+				950C1B90214186A200594CA4 /* DCFilterView_ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +166,15 @@
 				27721C50E42A7BBA9B38B4D7 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		950C1B91214186A200594CA4 /* DCFilterView_ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				950C1B92214186A200594CA4 /* DCFilterView_ExampleUITests.swift */,
+				950C1B94214186A200594CA4 /* Info.plist */,
+			);
+			path = DCFilterView_ExampleUITests;
 			sourceTree = "<group>";
 		};
 		B38B6C543DDBF2EE64B415FC /* Pods */ = {
@@ -203,13 +232,31 @@
 			productReference = 607FACE51AFB9204008FA782 /* DCFilterView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		950C1B8F214186A200594CA4 /* DCFilterView_ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950C1B97214186A200594CA4 /* Build configuration list for PBXNativeTarget "DCFilterView_ExampleUITests" */;
+			buildPhases = (
+				950C1B8C214186A200594CA4 /* Sources */,
+				950C1B8D214186A200594CA4 /* Frameworks */,
+				950C1B8E214186A200594CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				950C1B96214186A200594CA4 /* PBXTargetDependency */,
+			);
+			name = DCFilterView_ExampleUITests;
+			productName = DCFilterView_ExampleUITests;
+			productReference = 950C1B90214186A200594CA4 /* DCFilterView_ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -220,6 +267,11 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					950C1B8F214186A200594CA4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -239,6 +291,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* DCFilterView_Example */,
 				607FACE41AFB9204008FA782 /* DCFilterView_Tests */,
+				950C1B8F214186A200594CA4 /* DCFilterView_ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +308,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		950C1B8E214186A200594CA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -386,6 +446,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		950C1B8C214186A200594CA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950C1B93214186A200594CA4 /* DCFilterView_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -393,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* DCFilterView_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		950C1B96214186A200594CA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* DCFilterView_Example */;
+			targetProxy = 950C1B95214186A200594CA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -585,6 +658,52 @@
 			};
 			name = Release;
 		};
+		950C1B98214186A200594CA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DCFilterView_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devcorerd.DCFilterView-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DCFilterView_Example;
+			};
+			name = Debug;
+		};
+		950C1B99214186A200594CA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DCFilterView_ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.devcorerd.DCFilterView-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DCFilterView_Example;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,6 +730,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		950C1B97214186A200594CA4 /* Build configuration list for PBXNativeTarget "DCFilterView_ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950C1B98214186A200594CA4 /* Debug */,
+				950C1B99214186A200594CA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
