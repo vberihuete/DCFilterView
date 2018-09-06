@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DCFilterView_Example' do
+  pod 'DCFilterView', :path => '../'
+
+  target 'DCFilterView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
