@@ -1,5 +1,5 @@
 import XCTest
-import DCFilterView
+@testable import DCFilterView
 
 class Tests: XCTestCase {
     
