@@ -1,6 +1,6 @@
 # DCFilterView
 
-A Stack View friendly filter view that look like tabs.
+A Stack View friendly filter view with a tab look and feel.
 
 ![filter view demo](https://media.giphy.com/media/2UFU3FZOgZnnOmYtMz/giphy.gif)
 
