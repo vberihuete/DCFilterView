@@ -14,14 +14,14 @@ import UIKit
 /// init(identifier:, label:, color:, selected:) each parameter does what its name describes
 public class DCFilterViewItem: UIStackView {
     
-    private let title = UILabel()
-    private let bottomView = UIView()
-    private let bottomViewContainer = UIStackView()
+    let title = UILabel()
+    let bottomView = UIView()
+    let bottomViewContainer = UIStackView()
     
-    var delegate: DCFilterViewItemDelegate?
+    public var delegate: DCFilterViewItemDelegate?
     
-    var number: Int = 0
-    var selected: Bool = false
+    public var number: Int = 0
+    public var selected: Bool = false
     
     
     // MARK: - init
@@ -130,7 +130,7 @@ public class DCFilterViewItem: UIStackView {
     
 }
 
-protocol DCFilterViewItemDelegate{
+public protocol DCFilterViewItemDelegate{
     /// The delegate tap action of a given top item number
     ///
     /// - Parameter number: The item number to reflect the action

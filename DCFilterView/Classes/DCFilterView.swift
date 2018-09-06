@@ -10,12 +10,12 @@ import UIKit
 
 public class DCFilterView: UIStackView {
     
-    private var items : [DCFilterViewItem] = []
+    var items : [DCFilterViewItem] = []
     
-    private var color : UIColor = UIColor.black
-    private var selectedColor = UIColor.red
-    private var selectedIndex = 0
-    private weak var selectedItem: DCFilterViewItem?
+    var color : UIColor = UIColor.black
+    var selectedColor = UIColor.red
+    var selectedIndex = 0
+    weak var selectedItem: DCFilterViewItem?
     
     public var delegate : DCFilterViewDelegate?
     
@@ -69,7 +69,7 @@ public class DCFilterView: UIStackView {
 
 extension DCFilterView: DCFilterViewItemDelegate{
     
-    func tapAction(of number: Int) {
+    public func tapAction(of number: Int) {
         selectedIndex = number
         let tappedItem = items[number]
         selectedItem?.markUnselected(with: color, from: number < selectedItem!.number ? .right : .left)
