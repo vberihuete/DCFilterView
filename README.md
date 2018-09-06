@@ -1,7 +1,8 @@
 # DCFilterView
 
 A Stack View friendly filter view that look like tabs.
-![filter view demo](http://url/to/img.png)
+
+![filter view demo](https://media.giphy.com/media/2UFU3FZOgZnnOmYtMz/giphy.gif)
 
 This component is intendent to cover filter like solutions, not exactly View Controller (VC) changing type but content changing type in the same VC.
 
@@ -65,7 +66,7 @@ That's it to make your Filter View visible.
 
 Note: In my case here I'm setting the filter view in the first position making it visible as a top filter view, but you can place it as you like.
 
-![filter view demo](http://url/to/img.png)
+![filter view demo](https://media.giphy.com/media/2UFU3FZOgZnnOmYtMz/giphy.gif)
 
 ### Giving it interaction
 
