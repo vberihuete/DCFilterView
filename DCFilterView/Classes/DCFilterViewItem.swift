@@ -106,7 +106,7 @@ public class DCFilterViewItem: UIStackView {
         self.title.textColor = color
         self.bottomViewContainer.alignment = animationOrigin == .left ? .leading : .trailing
         self.selected = true
-        UIView.animate(withDuration: animationT, delay: 0, options: [UIViewAnimationOptions.curveEaseOut], animations: {
+        UIView.animate(withDuration: animationT, delay: 0, options: [UIView.AnimationOptions.curveEaseOut], animations: {
             self.bottomViewContainer.alignment = .fill
         })
     }
