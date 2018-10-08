@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DCFilterView'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'FilterView component developed by the Dev Core Team'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'DCFilterView/Classes/**/*'
-  s.swift_version = '3.2'
+  s.swift_version = '4.2'
   # s.resource_bundles = {
   #   'DCFilterView' => ['DCFilterView/Assets/*.png']
   # }

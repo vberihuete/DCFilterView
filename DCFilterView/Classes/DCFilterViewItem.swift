@@ -84,7 +84,6 @@ public class DCFilterViewItem: UIStackView {
     ///
     /// - Parameter sender: The sender
     @objc private func tap(sender: Any){
-        self.markSelected()
         delegate?.tapAction(of: number)
     }
     
