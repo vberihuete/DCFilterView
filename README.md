@@ -82,6 +82,16 @@ extension ViewController: DCFilterViewDelegate{
 }
 ```
 
+You can as well now call a direct selection to an item using the utility method
+```swift
+filterView.markSelected(at: 2)
+```
+Also consulting which index or item is selected, using read-only computed properties
+```swift
+filterView.selected
+filterView.selectedFilterViewItem
+```
+
 And as with all the delegation you are used to deal you will have to let your DCFilterView know that you want to be its delegate
 
 ```swift 
