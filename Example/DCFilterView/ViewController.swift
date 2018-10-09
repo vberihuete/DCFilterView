@@ -31,7 +31,10 @@ class ViewController: UIViewController {
         //give it a size
         self.containerSV.addConstraint(NSLayoutConstraint(item: self.filterView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 40))
     }
-
+    @IBAction func selectOneAction(_ sender: Any) {
+        filterView.markSelected(at: 2)
+    }
+    
 }
 
 extension ViewController: DCFilterViewDelegate{
