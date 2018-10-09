@@ -64,18 +64,25 @@ public class DCFilterView: UIStackView {
         
     }
     
-    
-}
-
-extension DCFilterView: DCFilterViewItemDelegate{
-    
-    public func tapAction(of number: Int) {
+    // MARK: - Action
+    public final func markSelected(at number: Int){
+        guard number < items.count else{
+            return
+        }
         selectedIndex = number
         let tappedItem = items[number]
         selectedItem?.markUnselected(with: color, from: number < selectedItem!.number ? .right : .left)
         tappedItem.markSelected(with: selectedColor, from: number < selectedItem!.number ? .right : .left)
         selectedItem = tappedItem
         delegate?.dcFilterView(selected: number)
+    }
+    
+}
+
+extension DCFilterView: DCFilterViewItemDelegate{
+    
+    public func tapAction(of number: Int) {
+        self.markSelected(at: number)
     }
     
 }
