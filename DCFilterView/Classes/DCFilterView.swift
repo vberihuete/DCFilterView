@@ -77,6 +77,13 @@ public class DCFilterView: UIStackView {
         delegate?.dcFilterView(selected: number)
     }
     
+    public var selected: Int{
+        return selectedIndex
+    }
+    
+    public var selectedFilterViewItem: DCFilterViewItem?{
+        return selectedItem
+    }
 }
 
 extension DCFilterView: DCFilterViewItemDelegate{
