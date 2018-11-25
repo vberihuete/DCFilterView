@@ -1,4 +1,8 @@
 # DCFilterView
+[![CI Status](https://img.shields.io/travis/vberihuete/DCFilterView.svg?style=flat)](https://travis-ci.org/vberihuete/DCFilterView)
+[![Version](https://img.shields.io/cocoapods/v/DCFilterView.svg?style=flat)](https://cocoapods.org/pods/DCFilterView)
+[![License](https://img.shields.io/cocoapods/l/DCFilterView.svg?style=flat)](https://cocoapods.org/pods/DCFilterView)
+[![Platform](https://img.shields.io/cocoapods/p/DCFilterView.svg?style=flat)](https://cocoapods.org/pods/DCFilterView)
 
 A Stack View friendly filter view with a tab look and feel.
 
@@ -12,16 +16,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-DCFilterView is not available through [CocoaPods](https://cocoapods.org). To install
+DCFilterView is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'DCFilterView', :git => 'https://github.com/vberihuete/DCFilterView.git'
+pod 'DCFilterView'
 ```
 
 ## How to
 
-After you have your cocoapods set up done and already added the pod for DCFilterView from git, you just need to import in the View Controller you will like to use the Filter View.
+After you have your cocoapods set up done and already added the pod for DCFilterView, you just need to import in the View Controller you will like to use the Filter View.
 
 ```swift
 import DCFilterView
